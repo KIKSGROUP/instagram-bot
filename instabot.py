@@ -63,7 +63,6 @@ try:
     medias = client.hashtag_medias_recent(hashtag, 20)
 
     for i, media in enumerate(medias):
-        # Like the media
         client.media_like(media.id)
 
         # Follow user and leave a comment every 5th media
